@@ -1,0 +1,28 @@
+using System;
+using System.Threading;
+
+namespace trafficLight
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("STOP");
+            Thread.Sleep(2000);
+            
+            Console.BackgroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("READY");
+            Thread.Sleep(2000);
+            
+            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("GO!!!");
+            Thread.Sleep(2000);
+
+            Console.ReadLine();
+        }
+    }
+}
